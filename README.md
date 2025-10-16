@@ -78,8 +78,6 @@ Kết quả gồm: <code>path</code>, <code>nodes_visited</code>, <code>solution
 
 <h2 align="center">🔹 Thuật toán BFS – Breadth-First Search</h2>
 
-<h2 align="center">🔹 Thuật toán BFS – Breadth-First Search</h2>
-
 <p>
 Thuật toán <b>BFS (Breadth-First Search)</b> là phương pháp duyệt theo chiều rộng, nghĩa là
 khám phá tất cả các trạng thái ở cùng một mức độ sâu trước khi mở rộng sang mức kế tiếp.
