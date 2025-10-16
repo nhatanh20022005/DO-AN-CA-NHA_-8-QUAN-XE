@@ -94,10 +94,6 @@ Trong bài toán <b>8 quân Xe</b>, mỗi trạng thái biểu diễn một tậ
   <li><b>Đặc điểm:</b> Hoàn chỉnh và cho lời giải tối ưu khi chi phí mỗi bước là như nhau.</li>
 </ul>
 
-<div align="center">
-  <img src="assets/BFS.gif" alt="BFS Rooks Visualization" width="480"><br>
-  <i>Hình minh họa: BFS lần lượt mở rộng các vị trí đặt Xe hợp lệ trên bàn cờ.</i>
-</div>
 
 <p align="center">
   🔗 <a href="https://www.geeksforgeeks.org/dsa/breadth-first-search-or-bfs-for-a-graph/" target="_blank">
@@ -147,10 +143,7 @@ DFS thích hợp để khảo sát nhanh nghiệm sâu, nhưng không đảm b�
   <li><b>Đặc tính:</b> Bộ nhớ nhỏ, dễ cài đặt, nhưng không đảm bảo tối ưu.</li>
 </ul>
 
-<div align="center">
-  <img src="assets/DFS.gif" alt="DFS Rooks Visualization" width="480"><br>
-  <i>Hình minh họa: DFS đi sâu theo từng nhánh đặt Xe trước khi quay lui.</i>
-</div>
+
 
 <p align="center">
   🔗 <a href="https://www.geeksforgeeks.org/dsa/depth-first-search-or-dfs-for-a-graph/" target="_blank">
@@ -207,10 +200,6 @@ giúp UCS tiết kiệm thời gian và bộ nhớ.
   <li><b>Kết quả:</b> Khi gặp bàn cờ đích, thuật toán trả về <code>path</code> và <code>solution_cost = g*</code>.</li>
 </ul>
 
-<div align="center">
-  <img src="assets/UCS.gif" alt="UCS Rooks Visualization" width="480"><br>
-  <i>Hình minh họa: UCS luôn mở rộng trạng thái có tổng chi phí nhỏ nhất.</i>
-</div>
 
 <p align="center">
   🔗 <a href="https://www.geeksforgeeks.org/artificial-intelligence/uniform-cost-search-ucs-in-ai/" target="_blank">
@@ -245,10 +234,6 @@ Nếu không tìm thấy nghiệm trong phạm vi đó, ta có thể tăng giớ
   <li><b>Kết quả:</b> Trả về <code>path</code> nếu tìm thấy nghiệm trong phạm vi giới hạn; nếu không thì None.</li>
 </ul>
 
-<div align="center">
-  <img src="assets/DLS.gif" alt="DLS Rooks Visualization" width="480"><br>
-  <i>Hình minh họa: DLS tìm kiếm theo chiều sâu nhưng dừng lại tại giới hạn đã định.</i>
-</div>
 
 <p align="center">
   🔗 <a href="https://www.geeksforgeeks.org/depth-limited-search-dls-in-ai/" target="_blank">
@@ -281,10 +266,6 @@ và <b>DFS</b> (bộ nhớ nhỏ), rất phù hợp khi <b>không biết trướ
   <li><b>Kết quả:</b> Trả về <code>path</code> ngay khi một vòng DLS chạm mục tiêu.</li>
 </ul>
 
-<div align="center">
-  <img src="assets/IDS.gif" alt="IDS Rooks Visualization" width="480"><br>
-  <i>Hình minh họa: IDS tăng dần giới hạn độ sâu, tìm nghiệm nông nhất với bộ nhớ nhỏ.</i>
-</div>
 
 <p align="center">
   🔗 <a href="https://www.geeksforgeeks.org/artificial-intelligence/iterative-deepening-search-ids-in-ai/" target="_blank">
@@ -512,10 +493,7 @@ def truy_vet_A_star(parent, trang_thai_cuoi):
     return duong_di[::-1]
 </code></pre>
 
-<div align="center">
-  <img src="assets/A_Star.gif" alt="A* Rooks Visualization" width="480"><br>
-  <i>Minh họa: A* mở rộng trạng thái có f nhỏ nhất, vừa nhanh vừa tối ưu.</i>
-</div>
+
 
 <p align="center">
   🔗 <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank">
@@ -570,10 +548,6 @@ Quá trình lặp lại cho đến khi <i>không còn láng giềng nào tốt h
   <li><b>Đường đi:</b> lưu lại toàn bộ các ma trận đã duyệt trong danh sách <code>path</code> để mô phỏng quá trình leo đồi.</li>
 </ul>
 
-<div align="center">
-  <img src="assets/HillClimbing.gif" alt="Hill Climbing Rooks Visualization" width="480"><br>
-  <i>Minh họa: từ cấu hình ngẫu nhiên, Hill Climbing liên tục chọn trạng thái con có heuristic thấp hơn.</i>
-</div>
 
 <p align="center">
   🔗 <a href="https://en.wikipedia.org/wiki/Hill_climbing" target="_blank">
@@ -616,10 +590,6 @@ dần cải thiện chất lượng lời giải cho đến khi đạt được 
   <li><b>Lịch sử tiến hóa:</b> lưu lại cá thể tốt nhất mỗi thế hệ trong danh sách <code>lich_su</code> để theo dõi quá trình hội tụ.</li>
 </ul>
 
-<div align="center">
-  <img src="assets/Genetic.gif" alt="Genetic Algorithm for 8 Rooks" width="480"><br>
-  <i>Minh họa: GA tiến hóa qua các thế hệ, dần đạt cấu hình tối ưu 8 Xe ở 8 cột khác nhau.</i>
-</div>
 
 <p align="center">
   🔗 <a href="https://en.wikipedia.org/wiki/Genetic_algorithm" target="_blank">
@@ -654,10 +624,6 @@ Nhiệt độ giảm dần theo lịch <code>T_k = T0 · α^k</code>.
   <li><b>Điều kiện dừng:</b> đạt nghiệm <code>E=0</code> hoặc hết số bước.</li>
 </ul>
 
-<div align="center">
-  <img src="assets/SimulatedAnnealing.gif" alt="Simulated Annealing for 8 Rooks" width="480"><br>
-  <i>Minh họa: khi T cao, SA chấp nhận một số bước xấu để thoát kẹt; khi T hạ, hành vi trở nên tham lam.</i>
-</div>
 
 <p align="center">
   🔗 <a href="https://en.wikipedia.org/wiki/Simulated_annealing" target="_blank">
@@ -686,10 +652,6 @@ Cách này giảm mạnh nhánh cần duyệt so với BFS, nhưng <i>không đ�
   <li><b>Fallback an toàn:</b> khi đã đặt đến hàng <code>n-1</code> và còn đúng <b>1 cột</b> trống, tự động điền nốt để hoàn tất nghiệm.</li>
 </ul>
 
-<div align="center">
-  <img src="assets/Beam.gif" alt="Beam Search for 8 Rooks" width="480"><br>
-  <i>Minh họa: mỗi tầng sinh children rồi cắt còn top-k theo score.</i>
-</div>
 
 <p align="center">
   🔗 <a href="https://en.wikipedia.org/wiki/Beam_search" target="_blank">Tìm hiểu thêm về Beam Search (Wikipedia)</a>
@@ -756,10 +718,6 @@ vì vậy nút AND quy về việc gọi lại OR trên trạng thái con duy nh
   <li><b>Kết quả:</b> trả về <code>path</code> (chuỗi trạng thái–hành động) khi đặt đủ <code>n</code> Xe hợp lệ.</li>
 </ul>
 
-<div align="center">
-  <img src="assets/And_Or_Search.gif" alt="AND–OR Search for Eight Rooks" width="480"><br>
-  <i>Minh họa: OR chọn hành động; AND yêu cầu mọi kết quả đều đạt mục tiêu (deterministic: 1 kết quả).</i>
-</div>
 
 <p align="center">
   🔗 <a href="https://en.wikipedia.org/wiki/AND%E2%80%93OR_tree" target="_blank">Tìm hiểu thêm về AND–OR Search (Wikipedia)</a>
@@ -804,10 +762,6 @@ thay vì một trạng thái duy nhất. Với Eight Rooks, mỗi hàng <code>r<
   <li><b>Mục tiêu:</b> gán đủ <code>n</code> hàng sao cho các cột là duy nhất (<code>is_goal_full</code> tương đương <code>distinct == n</code>).</li>
 </ul>
 
-<div align="center">
-  <img src="assets/PartiallyObservation.gif" alt="Partially Observable Search for Eight Rooks" width="480"><br>
-  <i>Minh họa: dùng sensor để loại nhanh giá trị sai, kết hợp MRV + forward checking.</i>
-</div>
 
 <p align="center">
   🔗 <a href="https://en.wikipedia.org/wiki/Partially_observable_Markov_decision_process" target="_blank">
@@ -872,10 +826,6 @@ Thuật toán CSP (Constraint Satisfaction Problem) như <b>Backtracking</b>, <b
   <li><b>Kết thúc:</b> khi <code>len(state) = n</code> → trả <code>path</code> nghiệm đầu tiên.</li>
 </ul>
 
-<p align="center">
-  <img src="assets/Backtracking.gif" alt="Backtracking for 8 Rooks" width="420"><br>
-  <i>Minh hoạ: thử – nếu fail thì quay lui.</i>
-</p>
 
 <h4>📊 Độ phức tạp & đặc tính</h4>
 <ul>
@@ -905,10 +855,7 @@ Nếu miền nào rỗng, <b>quay lui</b> tức thì → cắt tỉa mạnh các
   <li><b>Kết thúc:</b> khi <code>len(state)=n</code> (đặt đủ n Xe, không trùng cột) ⇒ trả <code>path</code>.</li>
 </ul>
 
-<p align="center">
-  <img src="assets/Backtracking_Forwarding.gif" alt="Backtracking + Forward Checking for 8 Rooks" width="420"><br>
-  <i>Minh họa: gán → FC cắt tỉa → đi sâu; rỗng miền ⇒ quay lui.</i>
-</p>
+
 
 <h4>📊 Độ phức tạp & đặc tính</h4>
 <ul>
